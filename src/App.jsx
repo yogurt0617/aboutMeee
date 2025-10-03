@@ -56,7 +56,7 @@ function App() {
     
       <h1>關於我</h1>
       <h2>yogurt(優格)</h2>
-      <img src="./public/OWO.jpg" alt="yogurt" id='me'/>
+      <img src="image/owo.jpg" alt="yogurt" id='me'/>
       <div className='meee'>
       <p>學校:臺中科技大學NUTC 資管科IM</p>
       <p>生日:2007/06/17(雙子座)</p>
