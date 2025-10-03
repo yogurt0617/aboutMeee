@@ -42,19 +42,29 @@
 }
 header{
   width:100%;
-  background-color:#333e4e;
+  background-color:#2a3342;
   position:fixed;
-  z-index:9999; 
+  z-index:9999;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 main{
-  padding:2em;
+  padding:3.5em;
 }
 #nowTime{
   font-size:1.5em;
   font-weight: bolder;
 }
-a{
+.friend{
   font-size: 30px;
+}
+#me{
+  width:300px;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.meee p{
+  margin: 7px;
+  display: inline;
 }
