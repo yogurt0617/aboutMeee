@@ -49,22 +49,30 @@ header{
   transform: translate(-50%, -50%);
 }
 main{
-  padding:3.5em;
+  padding:75px;
 }
 #nowTime{
   font-size:1.5em;
-  font-weight: bolder;
+  font-weight:bolder;
 }
 .friend{
   font-size: 30px;
 }
 #me{
-  width:300px;
+  width:350px;
   display: inline-block;
   object-fit: cover;
   border-radius: 50%;
 }
-.meee p{
-  margin: 7px;
-  display: inline;
+#img{
+  float: left;
+  margin-right: 20px;
+  
+}
+.selfCare{
+  display: flex;
+}
+.selfCare p{
+  display: flex;
+  font-size:clamp(1rem, 1.5vw, 5rem);
 }
