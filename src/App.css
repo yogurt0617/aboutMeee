@@ -55,8 +55,28 @@ main{
   font-size:1.5em;
   font-weight:bolder;
 }
+#yogurtAnime{
+   font-size:55px;
+   display: inline-block;
+   font-weight:bolder;
+}
 .friend{
   font-size: 30px;
+}
+#Moew{
+  background:linear-gradient(
+    45deg,
+  #B87333,
+  #C16B2E,
+  #C87A3A,
+  #CD7F32,
+  #D18B4C,
+  #D69C60,
+  #DDAE73,
+  #FFD39B
+  );
+  background-clip:text;
+  color:transparent;
 }
 #me{
   width:350px;
@@ -67,12 +87,51 @@ main{
 #img{
   float: left;
   margin-right: 20px;
-  
 }
 .selfCare{
   display: flex;
+  width:78dvw;
 }
 .selfCare p{
   display: flex;
-  font-size:clamp(1rem, 1.5vw, 5rem);
+  font-size:20px;
+}
+#info a{
+  color:#ffff;
+  font-weight:normal;
+}
+@media screen and (max-width:500px) {
+  #yogurtAnime{
+    font-size:18px;
+    width:78dvw;
+    display: inline-block;
+    font-weight:bolder;
+  }
+  #me{
+    width:200px;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  #img{
+  float: none;
+}
+  .selfCare{
+    display: block;
+  }
+  .selfCare p{
+    display: block;
+    font-size:17px;
+  }
+  .title{
+  font-size:25px;
+  }
+  .friend{
+  font-size: 17px;
+}
+}
+@media (prefers-color-scheme: light){
+  #info a{
+    color: black;
+  }
 }

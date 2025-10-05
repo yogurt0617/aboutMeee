@@ -8,7 +8,6 @@ moment.locale("zh-tw")
 
 function App() {
   const [yogurt,setYogurt] = useState("こんにちは！yogurtの自己紹介です。")
-  
   const[nowTime,setNowTime] = useState(moment().format("YYYY MMM Do HH:mm:ss (ddd)"))
   const[nowHour,setNowHour] = useState(moment().format("HH"))
   useEffect(() =>{
@@ -32,7 +31,17 @@ function App() {
       setYogurt("こんばんは！yogurtの自己紹介です。")
     }
   },[nowHour])
-
+  useEffect(()=>{
+    const orTitle = "優格の個網"
+    const chTitle = "你怎麼拋棄我了:("
+    document.addEventListener("visibilitychange",()=>{
+      if (document.hidden){
+        document.title = chTitle
+      }else{
+        document.title = orTitle
+      }
+    })
+  })
   
 
  
@@ -43,17 +52,17 @@ function App() {
     </header>
     
     <main>
-    <div>
+    <div  id="yogurtAnime">
       <TypeAnimation
-        key={yogurt}  
+        key={yogurt}
         sequence={[yogurt, 1000]}
         wrapper="span"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize:'clamp(2.5rem, 4.5vw, 3.5rem)', display: 'inline-block',fontWeight:"bolder"}}
       />
     </div>
-      <h1>關於我</h1>
+    
+    <h1 className='title'>關於我</h1>
 
     <div className='selfCare'>
 
@@ -61,10 +70,11 @@ function App() {
       <img src="image/owo.jpg" alt="yogurt" id='me'/>
       <h2>yogurt(優格)</h2>
       </div>
+
       <div id='info'>
-      <p>學校: <a href="https://www.nutc.edu.tw/" style={{color:"#ffff",fontWeight:"normal"}}>臺中科技大學NUTC</a> 資管科IM</p>
+      <p>學校: <a href="https://www.nutc.edu.tw/" target='_block'>臺中科技大學NUTC</a> 資管科IM</p>
       <p>生日:2007/06/17 18y(雙子座)</p>
-      <p>E-Mail:<a href="mailto:20070617TimmyAlan@gmail.com" target='_block' style={{color:"#ffff"}}>20070617TimmyAlan@gmail.com</a></p>
+      <p>E-Mail:20070617TimmyAlan@gmail.com</p>
       <p>專長:社會科、日文、說故事、料理</p>
       <p>興趣:料理、說話、唱歌、聽故事、看動漫、問chatGPT一堆哲學問題</p>
       <p>mbti:ENFP-A 快樂小狗</p>
@@ -72,10 +82,16 @@ function App() {
       </div>
       </div>
 
-    <div>
-      <p>2025/10/2 好欸我成功部屬了放上我的電神師傅的github</p>
-      <a href="https://github.com/yuzen9622" target='_block' className='friend'>友達の站:Zn</a>
-    </div>
+    <div className='friend'>
+      <p>
+        友達のWeb：
+        <a href="https://yuzen9622.github.io/" target='_blank' style={{color:"#DAA520"}}>Zn</a>
+        、
+        <a href="https://qwo877.github.io/me/home.html" target='_blank' id='Moew'>匿名用戶9487</a>
+        、
+        <a href="https://itousouta15.tw/" target='_blank' style={{color:"#5d7da1"}}>伊藤蒼太</a>
+      </p>
+    </div>  
       <h3>本網頁還在開發中</h3>
       <p>我是湊行數的</p>
       <p>我是湊行數的</p>
