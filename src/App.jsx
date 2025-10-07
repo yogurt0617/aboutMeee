@@ -52,6 +52,7 @@ function App() {
     </header>
     
     <main>
+      
     <div  id="yogurtAnime">
       <TypeAnimation
         key={yogurt}
@@ -72,7 +73,7 @@ function App() {
       </div>
 
       <div id='info'>
-      <p>學校: <a href="https://www.nutc.edu.tw/" target='_block'>臺中科技大學NUTC</a> 資管科IM</p>
+      <p>學校: <a href="https://www.nutc.edu.tw/" target='_block'>臺中科技大學NUTC/</a> <a href="https://im.nutc.edu.tw/" target='_blank'>資管科IM</a></p>
       <p>生日:2007/06/17 18y(雙子座)</p>
       <p>E-Mail:20070617TimmyAlan@gmail.com</p>
       <p>專長:社會科、日文、說故事、料理</p>

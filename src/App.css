@@ -5,54 +5,20 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
 header{
-  width:100%;
+  width:100dvw;
+  height:80px;
   background-color:#2a3342;
   position:fixed;
   z-index:9999;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top:0;
+  left:0;
 }
 main{
-  padding:75px;
+  padding:75px 0 0 0;
 }
 #nowTime{
-  font-size:1.5em;
+  font-size:30px;
   font-weight:bolder;
 }
 #yogurtAnime{
@@ -101,11 +67,18 @@ main{
   font-weight:normal;
 }
 @media screen and (max-width:500px) {
+main{
+  padding: 75px 0 0 0;
+}
   #yogurtAnime{
-    font-size:18px;
+    font-size:20px;
     width:78dvw;
     display: inline-block;
     font-weight:bolder;
+  }
+  #nowTime{
+  font-size:20px;
+  font-weight:bolder;
   }
   #me{
     width:200px;
@@ -121,16 +94,19 @@ main{
   }
   .selfCare p{
     display: block;
-    font-size:17px;
+    font-size:18px;
   }
   .title{
-  font-size:25px;
+  font-size:22px;
   }
   .friend{
-  font-size: 17px;
+  font-size: 15px;
 }
 }
 @media (prefers-color-scheme: light){
+  header{
+    background-color: #ddeaff;
+  }
   #info a{
     color: black;
   }
