@@ -66,7 +66,7 @@ main{
   color:#ffff;
   font-weight:normal;
 }
-@media screen and (max-width:678px) {
+@media screen and (max-width:768px) {
 main{
   padding: 75px 0 0 0;
 }
