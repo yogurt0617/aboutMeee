@@ -66,12 +66,12 @@ main{
   color:#ffff;
   font-weight:normal;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:678px) {
 main{
   padding: 75px 0 0 0;
 }
   #yogurtAnime{
-    font-size:20px;
+    font-size:16px;
     width:78dvw;
     display: inline-block;
     font-weight:bolder;
@@ -94,7 +94,7 @@ main{
   }
   .selfCare p{
     display: block;
-    font-size:18px;
+    font-size:15px;
   }
   .title{
   font-size:22px;
